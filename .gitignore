@@ -1,88 +1,34 @@
-# ======================================
-# Node.js (backend e frontend)
-# ======================================
+# -------------------
+# Node.js (backend)
+# -------------------
 node_modules/
+.env
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
 
-# ======================================
-# Build / Produção
-# ======================================
-dist/
-build/
-.cache/
-.next/
-out/
+# -------------------
+# React (frontend)
+# -------------------
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
 
-# ======================================
-# Env files (⚠️ SENSÍVEIS)
-# ======================================
-.env
-.env.*
-*.env
-
-# ======================================
-# Logs
-# ======================================
-logs
-*.log
-*.log.*
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# ======================================
-# Test / Coverage
-# ======================================
-coverage/
-*.lcov
-
-# ======================================
-# Editor / Sistema Operacional
-# ======================================
+# -------------------
+# Sistema Operacional
+# -------------------
 .DS_Store
 Thumbs.db
-.idea/
+
+# -------------------
+# IDEs e editores
+# -------------------
 .vscode/
-*.swp
-*.swo
-
-# ======================================
-# Outros possíveis sensíveis
-# ======================================
-# Chaves, certificados e configs
-*.pem
-*.key
-*.crt
-*.cert
-*.pfx
-
-# Credenciais Firebase / GCP / AWS
-firebase.json
-*.serviceAccountKey.json
-.aws/
-.gcloud/
-
-# Credenciais Heroku / Netlify / Vercel
-.netlify/
-.vercel/
-
-# ======================================
-# Docker
-# ======================================
-*.dockerfile
-*.dockerignore
-docker-compose*.yml
-
-# ======================================
-# Backup / Misc
-# ======================================
-*.bak
-*.tmp
-*.temp
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
