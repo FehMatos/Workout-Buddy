@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Workout-Buddy/static/css/main.45b7182b.css",
-    "main.js": "/Workout-Buddy/static/js/main.62f621e3.js",
+    "main.js": "/Workout-Buddy/static/js/main.d8e8e7fe.js",
     "index.html": "/Workout-Buddy/index.html",
     "main.45b7182b.css.map": "/Workout-Buddy/static/css/main.45b7182b.css.map",
-    "main.62f621e3.js.map": "/Workout-Buddy/static/js/main.62f621e3.js.map"
+    "main.d8e8e7fe.js.map": "/Workout-Buddy/static/js/main.d8e8e7fe.js.map"
   },
   "entrypoints": [
     "static/css/main.45b7182b.css",
-    "static/js/main.62f621e3.js"
+    "static/js/main.d8e8e7fe.js"
   ]
 }
