@@ -14,7 +14,10 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://FehMatos.github.io"],
+    origin: [
+      "http://localhost:4000",
+      "https://FehMatos.github.io/Workout-Buddy",
+    ],
   })
 );
 
