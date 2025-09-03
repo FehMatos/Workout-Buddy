@@ -4,22 +4,12 @@ const express = require("express");
 const workoutRoutes = require("./routes/workouts");
 const mongoose = require("mongoose");
 const userRoutes = require("./routes/user");
-const cors = require("cors");
 
 // express app
 const app = express();
 
 // middleware
 app.use(express.json());
-
-app.use(
-  cors({
-    origin: [
-      "http://localhost:4000",
-      "https://FehMatos.github.io/Workout-Buddy",
-    ],
-  })
-);
 
 app.use((req, res, next) => {
   console.log(req.path, req.method);
