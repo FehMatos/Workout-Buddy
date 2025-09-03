@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
 import { useAuthContext } from "../hooks/useAuthContext";
+import FehFooter from "../components/FehFooter";
 
 // components
 import WorkoutDetails from "../components/WorkoutDetails";
@@ -31,15 +32,18 @@ const Home = () => {
   }, [dispatch, user]);
 
   return (
-    <div className="home">
-      <div className="workouts">
-        {workouts &&
-          workouts.map((workout) => (
-            <WorkoutDetails key={workout._id} workout={workout} />
-          ))}
+    <>
+      <div className="home">
+        <div className="workouts">
+          {workouts &&
+            workouts.map((workout) => (
+              <WorkoutDetails key={workout._id} workout={workout} />
+            ))}
+        </div>
+        <WorkoutForm />
       </div>
-      <WorkoutForm />
-    </div>
+      <FehFooter />
+    </>
   );
 };
 

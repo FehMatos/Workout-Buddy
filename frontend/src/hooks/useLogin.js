@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
+import FehFooter from "../components/FehFooter";
 
 export const useLogin = () => {
   const [error, setError] = useState(null);
@@ -36,5 +37,9 @@ export const useLogin = () => {
     }
   };
 
-  return { login, isLoading, error };
+  return {
+    login,
+    isLoading,
+    error,
+  };
 };
